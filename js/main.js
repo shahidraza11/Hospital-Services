@@ -574,7 +574,7 @@ function saveschedule(){
 
 ///Departmentform data in consol//
 function savedepartment(){
-    var obj={
+    var object={
         Department:  $("#department-name").val(),
         description: $("#department-description").val(),
         DepartmentStatus:  $("#Department-Status input[type='radio']:checked").val(),
@@ -587,5 +587,5 @@ function savedepartment(){
     // else{
     //     $("#department-name").removeClass("error");
     // }
-    console.log(obj);
+    console.log(object);
 }
