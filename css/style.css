@@ -60,6 +60,9 @@ Version      : 1.0
 html {
 	height: 100%;
 }
+/* .error {
+	border: 2px solid red;
+} */
 body {
 	font-family: 'Rubik', sans-serif;
 	font-size: 0.875rem;
