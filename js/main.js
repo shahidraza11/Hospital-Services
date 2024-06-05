@@ -1,5 +1,10 @@
 $("#appointment-form").hide();
 $("#schedule_form").hide();
+$("#employees_form").hide();
+$("#employee_page1").hide(); 
+$("#department-form").hide();
+$("#employee_change").hide();  
+
 
 
 function dashboardPage() {
@@ -11,6 +16,8 @@ function dashboardPage() {
     $("#doctor_page").hide();
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
+    $("#employee_page1").hide();
+    $("#employee_change").hide();  
     $("#patient_li").removeClass("active");
     $("#appointment_li").removeClass("active");
     $("#doctor_li").removeClass("active");
@@ -18,7 +25,7 @@ function dashboardPage() {
     $("#department_li").removeClass("active");
     $("#dashboard_li").addClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -37,6 +44,8 @@ function doctorPage() {
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
     $("#doctor_page").show();
+    $("#employee_page1").hide();
+    $("#employee_change").hide(); 
     $("#dashboard_li").removeClass("active");
     $("#patient_li").removeClass("active");
     $("#appointment_li").removeClass("active");
@@ -44,7 +53,7 @@ function doctorPage() {
     $("#department_li").removeClass("active");
     $("#doctor_li").addClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -64,6 +73,8 @@ function patientPage() {
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
     $("#patient_page").show();
+    $("#employee_page1").hide(); 
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#appointment_li").removeClass("active");
@@ -71,7 +82,7 @@ function patientPage() {
     $("#department_li").removeClass("active");
     $("#patient_li").addClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -91,13 +102,15 @@ function appointmentPage() {
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
     $("#appointment_page").show();
+    $("#employee_page1").hide(); 
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#appointment_li").addClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -117,6 +130,8 @@ function schedulePage() {
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
     $("#schedule_page").show();
+    $("#employee_page1").hide();
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -124,7 +139,7 @@ function schedulePage() {
     $("#department_li").removeClass("active");
     $("#schedule_li").addClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -144,6 +159,8 @@ function departmentPage() {
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
     $("#department_page").show();
+    $("#employee_page1").hide();
+    $("#employee_change").hide(); 
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -151,7 +168,7 @@ function departmentPage() {
     $("#schedule_li").removeClass("active");
     $("#department_li").addClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -171,6 +188,8 @@ function addDoctor() {
     $("#department_page").hide();
     $("#add_patient_page").hide();
     $("#add_doctor_page").show();
+    $("#employee_page1").hide(); 
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").addClass("active");
     $("#patient_li").removeClass("active");
@@ -178,7 +197,7 @@ function addDoctor() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -198,6 +217,8 @@ function addPatient() {
     $("#department_page").hide();
     $("#add_doctor_page").hide();
     $("#add_patient_page").show();
+    $("#employee_page1").hide(); 
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").addClass("active");
@@ -205,7 +226,7 @@ function addPatient() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -217,14 +238,16 @@ function addPatient() {
 }
 
 function Employeespage() {
-    $("#dashboard_page").hide();
-    $("#doctor_page").hide();
-    $("#patient_page").hide();
-    $("#appointment_page").hide();
-    $("#schedule_page").hide();
-    $("#department_page").hide();
-    $("#add_doctor_page").hide();
-    $("#add_patient_page").hide();
+    // $("#dashboard_page").hide();
+    // $("#employee_page1").hide(); 
+    // $("#doctor_page").hide();
+    // $("#patient_page").hide();
+    // $("#appointment_page").hide();
+    // $("#schedule_page").hide();
+    // $("#department_page").hide();
+    // $("#add_doctor_page").hide();
+    // $("#add_patient_page").hide();
+    // $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -232,7 +255,7 @@ function Employeespage() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").addClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -240,11 +263,13 @@ function Employeespage() {
     $("#Invoice").removeClass("active");
     $("#payment").removeClass("active");
     $("#payrolls").removeClass("active");
+    
 
 }
 
 
-function Employeeslist() {
+function Employeeslistbar() {
+    $("#employee_change").show();
     $("#dashboard_page").hide();
     $("#doctor_page").hide();
     $("#patient_page").hide();
@@ -253,6 +278,8 @@ function Employeeslist() {
     $("#department_page").hide();
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
+    $("#employee_page1").hide(); 
+    $("#Employeeslist1").addClass("active");
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -260,7 +287,6 @@ function Employeeslist() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").addClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -280,6 +306,8 @@ function leaveslist() {
     $("#department_page").hide();
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
+    $("#employee_page1").hide(); 
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -287,7 +315,7 @@ function leaveslist() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").addClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -307,6 +335,8 @@ function holidayslist() {
     $("#department_page").hide();
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
+    $("#employee_page1").hide(); 
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -314,7 +344,7 @@ function holidayslist() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").addClass("active");
     $("#attendance").removeClass("active");
@@ -334,6 +364,8 @@ function attendancelist() {
     $("#department_page").hide();
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
+    $("#employee_page1").hide();
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -341,7 +373,7 @@ function attendancelist() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").addClass("active");
@@ -353,14 +385,16 @@ function attendancelist() {
 }
 
 function Accountspage() {
-    $("#dashboard_page").hide();
-    $("#doctor_page").hide();
-    $("#patient_page").hide();
-    $("#appointment_page").hide();
-    $("#schedule_page").hide();
-    $("#department_page").hide();
-    $("#add_doctor_page").hide();
-    $("#add_patient_page").hide();
+    // $("#dashboard_page").hide();
+    // $("#doctor_page").hide();
+    // $("#patient_page").hide();
+    // $("#appointment_page").hide();
+    // $("#schedule_page").hide();
+    // $("#department_page").hide();
+    // $("#add_doctor_page").hide();
+    // $("#add_patient_page").hide();
+    // $("#employee_page1").hide(); 
+    // $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -368,7 +402,7 @@ function Accountspage() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -388,6 +422,8 @@ function Invoices() {
     $("#department_page").hide();
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
+    $("#employee_page1").hide(); 
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -395,7 +431,7 @@ function Invoices() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -415,6 +451,8 @@ function payments() {
     $("#department_page").hide();
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
+    $("#employee_page1").hide(); 
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -422,7 +460,7 @@ function payments() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -441,6 +479,8 @@ function payrollpage() {
     $("#department_page").hide();
     $("#add_doctor_page").hide();
     $("#add_patient_page").hide();
+    $("#employee_page1").hide(); 
+    $("#employee_change").hide();
     $("#dashboard_li").removeClass("active");
     $("#doctor_li").removeClass("active");
     $("#patient_li").removeClass("active");
@@ -448,7 +488,7 @@ function payrollpage() {
     $("#schedule_li").removeClass("active");
     $("#department_li").removeClass("active");
     $("#employee_li").removeClass("active");
-    $("#Employeeslist").removeClass("active");
+    $("#Employeeslist1").removeClass("active");
     $("#Leavesnow").removeClass("active");
     $("#holiday").removeClass("active");
     $("#attendance").removeClass("active");
@@ -495,6 +535,23 @@ function backToDepartment(){
     $("#department-btn").show();
 }
 
+//emploeesformshowhide   
+function Employeestap(){
+    $("#employees_form").show();
+    $("#Employees_tab").hide();
+    $("#Employees_btn").hide();
+   
+
+    
+}
+
+function Employeesbackbtn(){
+    $("#employees_form").hide();
+    $("#Employees_tab").show();
+    $("#Employees_btn").show();
+    
+
+}
 
 
 
@@ -536,6 +593,7 @@ function savePatient(){
     }
 
 console.log(obj);
+
 }
 
 ///appointmentform data in console
@@ -589,3 +647,6 @@ function savedepartment(){
     // }
     console.log(object);
 }
+
+
+
